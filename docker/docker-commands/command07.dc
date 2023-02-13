@@ -1,2 +1,1 @@
-docker stop 01container
-docker rm 01container
+docker container run --name 02images -d -p 3000:80 nginx:1.21.3-alpine
