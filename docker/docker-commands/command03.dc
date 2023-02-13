@@ -1,0 +1,1 @@
+docker ps -f name=01c | grep -w 01container
