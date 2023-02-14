@@ -1,5 +1,4 @@
-FROM node:14
-ADD node_modules.tar.gz /
-COPY . ./docker/docker-commands/command09.dc
+FROM node:14-alpine
+COPY node_modules.tar.gz /usr/local/bin/ 
 EXPOSE 3001
 CMD ["npm", "start"]
