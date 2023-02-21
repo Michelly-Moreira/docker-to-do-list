@@ -2,7 +2,6 @@ version: '3'
 services:
   todotests:
     image: todotests
-    command: sh
     depends_on:
       - todofront
       - todoback
@@ -15,12 +14,10 @@ services:
       - todoback
     environment:
       - REACT_APP_API_HOST=todoback
-    command: sh
     ports:
       - 3000:3000
 
   todoback:
     image: todobackend
-    command: sh
     ports:
       - 3001:3001
